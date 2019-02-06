@@ -1,0 +1,14 @@
+{
+  "name": "v-addable-files",
+  "version": "1.0.0",
+  "description": "A Vue directive that allows you to input multiple files.",
+  "main": "dist/v-addable-files.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sukohi Kuhoh",
+  "license": "MIT"
+}

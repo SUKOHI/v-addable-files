@@ -1,0 +1,28 @@
+<html>
+<body>
+<div id="app">
+    <div v-for="file in files">{{ file.name }}</div>
+    <input type="file" v-addable-files="files" max="5" @too-many="onError" multiple>
+    <button type="button" @click="files=[]">Clear</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.min.js"></script>
+<script src="../src/v-addable-files.js"></script>
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            files: []
+        },
+        methods: {
+            onError: function(e) {
+
+                console.log('Too many!', e.detail)
+
+            }
+        }
+    })
+
+</script>
+</body>
+</html>
