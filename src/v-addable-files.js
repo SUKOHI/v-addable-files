@@ -17,7 +17,8 @@ Vue.directive('addable-files', {
                         el: el,
                         files: {
                             current: currentFiles,
-                            input: this.files
+                            input: this.files,
+                            max: max
                         }
                     });
                     el.dispatchEvent(event);
